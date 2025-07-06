@@ -1,42 +1,77 @@
-# Personal Developer Portfolio 🚀
+# Irfan Shaikh - Developer Portfolio 🚀
 
-[![Site preview](/public/portfolio-thumbnail.png)](https://ibiimemon.com/)
+[![Live Preview](public/portfolio-thumbnail.png)](https://irfanshaikh.vercel.app)
 
-Welcome to my developer portfolio! This project showcases my skills, projects, and experience as a developer. Built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com). it not only provides a visually appealing representation of my work but also ensures optimal performance. View the [live site](https://developer-portfolio-jokpvaf4a-ibrahim-memons-projects.vercel.app/).
+Welcome to my personal developer portfolio! This site showcases my background, projects, and skills in full-stack and machine learning development. It’s built using [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com) — designed for speed, accessibility, and responsiveness.
 
-# Features 🎉
+👉 **Live site:** [https://irfanshaikh.vercel.app](https://irfanshaikh.vercel.app)
 
-The whole [portfolio](https://developer-portfolio-jokpvaf4a-ibrahim-memons-projects.vercel.app/) is a React-based single page app built with Next.js in Typescript, using only statically generated pages.
+---
 
-# Fonts ✍🏻
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Built with modern technologies (React, Next.js App Router)
+- Fully responsive layout with animations and SVG visuals
+- Starfield canvas background and platform-themed social previews
+- Contact Me + Download CV functionality
+- Live deployed with GitHub → Vercel CI/CD
 
-# Project images 🖼️
+---
 
-All project images live under `public/images` and are automatically attached to each project based on the inclusion of the project's `slug` in their filenames
+## 🧠 Technologies Used
 
-# ✨ Development
+- ⚛️ Next.js 15 (App Router)
+- 💅 Tailwind CSS
+- 🟦 TypeScript
+- 📸 `next/image` for optimized images
+- 🎯 React Icons
+- 🔁 Framer Motion (optional animations)
+- 🌌 Custom star canvas background
+
+---
+
+## 🖼 Project Images
+
+All project preview images are stored under:
+
+
+Each image name should include a slug related to the project (e.g., `image-captioning.png` for the Image Captioning project).
+
+---
+
+## ✍️ Fonts
+
+This portfolio uses `next/font` to optimize Google Fonts loading. Current font: **Inter**
+
+More about this: [Font Optimization Docs](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
+
+---
+
+## 🛠️ How to Run Locally
+
+### 📦 Prerequisites
+
+- **Node.js** (v18+) → [Download](https://nodejs.org/)
+- **npm** or **yarn**
+- **Git** → [Download](https://git-scm.com/)
+
+---
+
+### 🚀 Getting Started
 
 ```bash
-git clone git@github.com:ibrahimmemonn/Developer-Portfolio.git
-cd Developer-Portfolio/
+# 1. Clone the repository
+git clone https://github.com/irfanshaikh911/portfolio-website.git
 
-# GITHUB_TOKEN is required for some parts
-# See https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+# 2. Navigate into the project directory
+cd portfolio-website
 
-npm i
+# 3. Install dependencies
+npm install
+# or
+yarn install
+
+# 4. Run the development server
 npm run dev
-```
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-# 🚚 Deployment
-
-Every branch or Pull Request is automatically deployed by [Vercel](https://vercel.com/) with their GitHub integration, where the `main` branch is automatically aliased to [Ibii Memon](https://ibiimemon.com/). A link to a preview deployment will appear under each Pull Request.
-
-# 🏛 Licenses
-
-© Copyright 2023 Ibrahim Memon
-
-Don't care if you fork & play with it, but you're not allowed to publish anything from it as a whole without my written permission. Also please be aware, the combination of typography, colors & layout makes up my brand identity. So please don't just clone everything, but rather do a remix!
+# or
+yarn dev
