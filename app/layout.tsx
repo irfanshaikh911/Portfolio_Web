@@ -9,33 +9,33 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ibiimemon.com/"),
-  title: "Ibrahim Memon - SWE | IXD | UX - Developer Portfolio",
+  metadataBase: new URL("https://irfanshaikh.dev/"),
+  title: "Irfan Shaikh - ML | Full Stack | Developer Portfolio",
   description:
-    "Developer Portfolio of Frontend & Mobile App Developer from Pakistan with 3+ years of expertise. Senior Software Engineer. Specializing mobile apps, UX, and JavaScript technologies.",
+    "Portfolio of Irfan Shaikh – ML enthusiast and Full Stack Developer. Passionate about crafting intelligent applications using modern web and AI technologies.",
   keywords: [
-    "Developer",
-    "Portfolio",
-    "Developer Portflio",
-    "Ibrahim Memon",
-    "Ibrahim",
-    "IbiiMemon",
-    "IbrahimMemon",
-    "Ibrahim_Memon",
-    "Next.js",
-    "ReactNative",
-    "Android",
+    "Irfan Shaikh",
+    "ML Developer",
+    "Full Stack Developer",
+    "Developer Portfolio",
+    "React",
+    "Python",
+    "Streamlit",
+    "Machine Learning",
+    "Flask",
+    "IrfanShaikh911",
   ],
   openGraph: {
-    title: "Ibrahim Memon - SWE | IXD | UX",
+    title: "Irfan Shaikh - ML | Full Stack Developer",
     description:
-      "Frontend & Mobile App Developer from Pakistan with 3+ years of expertise. Senior Software Engineer. Specializing mobile apps, UX, and JavaScript technologies.",
-    images: "/OpenGraph.jpg",
+      "Explore Irfan Shaikh’s portfolio – blending AI, ML, and full stack development into real-world software.",
+    images: "/OpenGraph.jpg", // replace with your image in public/
   },
   alternates: {
-    canonical: "https://ibiimemon.com/",
+    canonical: "https://irfanshaikh.dev/",
   },
 };
+
 export default function RootLayout({
   children,
 }: {
@@ -50,19 +50,21 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "http://schema.org",
               "@type": "Person",
-              name: "Ibrahim Memon",
-              jobTitle: "Software Engineer",
-              url: "https://ibiimemon.com",
+              name: "Irfan Shaikh",
+              jobTitle: "Software Developer",
+              url: "https://irfanshaikh.dev",
               sameAs: [
-                "https://www.linkedin.com/in/ibrahimmemonn/",
-                "https://github.com/ibrahimmemonn",
+                "https://www.linkedin.com/in/irfan-shaikh911/",
+                "https://github.com/irfanshaikh911",
+                "https://www.kaggle.com/irfan911",
               ],
             }),
           }}
         />
+        {/* Optional: Google Analytics */}
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-${process.env.NEXT_PRIVATE_GTID}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-${process.env.NEXT_PUBLIC_GTAG_ID}`}
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -71,7 +73,7 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', 'G-${process.env.NEXT_PRIVATE_GTID}');
+              gtag('config', 'G-${process.env.NEXT_PUBLIC_GTAG_ID}');
             `,
           }}
         />

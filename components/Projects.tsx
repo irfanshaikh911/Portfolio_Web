@@ -2,104 +2,105 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Projects: React.FC<{}> = () => {
+const Projects: React.FC = () => {
   return (
     <section id="projects">
       <h2 className="text-white font-semibold text-center text-6xl pt-[35px]">
         PROJECTS
       </h2>
-      <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">
+      <p className="tracking-[0.5em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500 text-1xl">
         EXPLORE NOW
       </p>
-      <div className=" container mx-auto 2xl  ">
-        <div className="flex-col flex md:flex-row  mt-7">
+
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row flex-wrap gap-5 mt-7 justify-between">
+          {/* Machine Translation */}
           <Link
-            href="https://web.hr/"
-            rel="noopener noreferrer"
+            href="https://github.com/irfanshaikh911/machine-translation"
             target="_blank"
-            className="z-[1]"
+            rel="noopener noreferrer"
+            className="z-[1] w-full md:w-[48%]"
           >
-            <div className="flex-row flex mb-5">
+            <div className="flex mb-5">
               <Image
-                src="/FirstProject.png"
+                src="/machine_translation.png"
                 height={150}
                 width={150}
-                alt="Ibrahim Memon - UX Design Project"
+                alt="Machine Translation"
               />
               <div className="p-3">
-                <p className="text-white font-semibold text-xl">WebHR</p>
+                <p className="text-white font-semibold text-xl">Machine Translation</p>
                 <p className="text-gray-500 text-[10px]">
-                  Designed a modern UI website comprising more than 50 screens,
-                  along with the integration of a blog using Next.js.
+                  Transformer-based sequence-to-sequence model using PyTorch for English-to-Hindi translation, featuring attention mechanism.
                 </p>
               </div>
             </div>
           </Link>
+
+          {/* Image Captioning */}
           <Link
-            href="https://hireside.com/"
-            rel="noopener noreferrer"
+            href="https://github.com/irfanshaikh911/image-captioning"
             target="_blank"
-            className="z-[1]"
+            rel="noopener noreferrer"
+            className="z-[1] w-full md:w-[48%]"
           >
-            <div className="flex-row flex mb-5">
+            <div className="flex mb-5">
               <Image
-                src="/SecondProject.png"
+                src="/image_captioning.png"
                 height={150}
                 width={150}
-                alt="Ibrahim Memon - UX Design Project"
+                alt="Image Captioning"
               />
               <div className="p-3">
-                <p className="text-white font-semibold text-xl">HireSide</p>
+                <p className="text-white font-semibold text-xl">Image Captioning</p>
                 <p className="text-gray-500 text-[10px]">
-                  Developed a web application on Next.js that allows users to
-                  apply for jobs, create job posts, and manage their company
-                  profiles.
+                  A CNN-RNN-based deep learning model that generates natural captions for unseen images using the COCO dataset.
                 </p>
               </div>
             </div>
           </Link>
-        </div>
-        <div className="flex-col flex md:flex-row ">
+
+          {/* Water Potability */}
           <Link
-            href="https://www.vergesystems.com/"
-            rel="noopener noreferrer"
+            href="https://github.com/irfanshaikh911/water-potability"
             target="_blank"
-            className="z-[1]"
+            rel="noopener noreferrer"
+            className="z-[1] w-full md:w-[48%]"
           >
-            <div className="flex-row flex mb-5">
+            <div className="flex mb-5">
               <Image
-                src="/ThirdProject.png"
+                src="/water_potability.png"
                 height={150}
                 width={150}
-                alt="Ibrahim Memon - UX Design Project"
+                alt="Water Potability Detection"
               />
-              <div className=" p-3 ">
-                <p className="text-white font-semibold text-xl">
-                  Verge Systems
-                </p>
+              <div className="p-3">
+                <p className="text-white font-semibold text-xl">Water Potability Detection</p>
                 <p className="text-gray-500 text-[10px]">
-                  Developed the Verge Systems website using React.js.
+                  Full-stack ML project using Flask and Streamlit to predict water potability from real-world parameters.
                 </p>
               </div>
             </div>
           </Link>
+
+          {/* Autogradr */}
           <Link
-            href="http://44.201.47.75/"
-            rel="noopener noreferrer"
+            href="https://github.com/irfanshaikh911/autogradr"
             target="_blank"
-            className="z-[1]"
+            rel="noopener noreferrer"
+            className="z-[1] w-full md:w-[48%]"
           >
-            <div className="flex-row flex mb-5">
+            <div className="flex mb-5">
               <Image
-                src="/FourProject.png"
+                src="/autogradr.png"
                 height={150}
                 width={150}
-                alt="Ibrahim Memon - UX Design Project"
+                alt="Autogradr"
               />
-              <div className="p-3 ">
-                <p className="text-white font-semibold text-xl">Payoasis</p>
+              <div className="p-3">
+                <p className="text-white font-semibold text-xl">Autogradr</p>
                 <p className="text-gray-500 text-[10px]">
-                  Designed the modern UI for a banking website utilizing Gatsby.
+                  AI-powered autograding system with rubric-based scoring, LLM feedback, and instructor review support for engineering colleges.
                 </p>
               </div>
             </div>
