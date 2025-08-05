@@ -41,7 +41,8 @@ const Experience: React.FC = () => {
           {["Data Science","Machine Learning","Deep Learning","GenAi"].map((tech) => (
             <div
               key={tech}
-              className="bg-transparent border border-[#2E2E2E] text-white py-2 px-5 rounded-3xl text-sm cursor-default"
+              className="bg-blue-900 border border-[#2E2E2E] text-white py-2 px-5 text-[10px] rounded-3xl text-sm  cursor-default"
+              // className="bg-transparent border border-[#2E2E2E] text-white py-2 px-5 rounded-3xl text-sm cursor-default"
             >
               {tech}
             </div>
