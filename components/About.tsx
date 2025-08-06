@@ -1,22 +1,34 @@
+"use client";
+
 import React from "react";
 
-const About: React.FC<{}> = () => {
+const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center h-full relative overflow-hidden pt-[35px]"
-      style={{ transform: "scale(0.9)" }}
+      className="relative px-6 py-20 sm:py-28 lg:py-32 bg-transparent overflow-hidden"
     >
-      <div className="flex flex-col justify-around flex-wrap items-center max-w-[900px]">
-        <h1 className="text-white font-semibold text-6xl">ABOUT ME</h1>
-        <p className="tracking-[0.5em] text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500 text-1xl">
-          EXPLORE NOW
+      <div className="max-w-5xl mx-auto text-center">
+        {/* Section Title */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-3">
+          About Me
+        </h1>
+        <p className="text-sm tracking-[0.3em] bg-gradient-to-r from-purple-600 to-orange-400 text-transparent bg-clip-text uppercase mb-10">
+          Explore Now
         </p>
-        <p className="text-gray-300 text-center">
-          Fueled by a deep curiosity for how things work, I enjoy exploring new technologies and translating abstract concepts into real-world applications. My approach to development is grounded in continuous learning, whether it&apos;s experimenting with emerging tools or understanding the fundamentals behind great software.
+
+        {/* Description */}
+        <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+          I’m a passionate full-stack developer and machine learning enthusiast with a
+          love for turning ideas into scalable, impactful software solutions. My approach
+          blends creativity and logic — always striving to build experiences that are not
+          only functional but also intuitive and engaging.
           <br />
           <br />
-          I thrive in environments where learning is constant and creativity meets logic. Every line of code is an opportunity to grow, and I find satisfaction in building solutions that are both thoughtful and functional. For me, the journey of software development is as exciting as the destination — always evolving, always improving.
+          Whether it’s optimizing ML models, designing REST APIs, or crafting front-end
+          interfaces, I focus on writing clean, maintainable code and learning new tools
+          every step of the way. I enjoy collaborating in dynamic environments where
+          innovation and growth are a daily part of the process.
         </p>
       </div>
     </section>
